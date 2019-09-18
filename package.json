@@ -1,0 +1,27 @@
+{
+  "name": "tomato-app",
+  "version": "1.0.0",
+  "description": "tomato app",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raqushka/tomato-app.git"
+  },
+  "author": "https://github.com/raqushka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raqushka/tomato-app/issues"
+  },
+  "homepage": "https://github.com/raqushka/tomato-app#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
+}
