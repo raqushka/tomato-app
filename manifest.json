@@ -1,11 +1,24 @@
 {
-    "name": "Getting Started Example",
-    "version": "1.0",
+    "name": "tomato app",
+    "version": "2.0",
+    "manifest_version": 2,
     "description": "Build an Extension!",
-    "permissions": ["storage"],
-    "background": {
-        "scripts": ["app/app.js"],
+    "browser_action": {
+        "default_icon": "icon.png"
+      },
+      "background" : {
+        "scripts" : ["src/build/background.js"],
         "persistent": false
-    },
-    "manifest_version": 2
+      },
+      "permissions": [
+        "activeTab",
+        "tabs"
+      ],
+    
+      "content_scripts": [
+            {
+                "matches": ["http://*/*", "https://*/*"],
+                "js": ["src/build/main.js"]
+            }
+        ]
 }
